@@ -3,7 +3,7 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const PricingCard = ({ title, price, features, buttonText, buttonLink }) => (
-  <div className="w-[220px] md:w-[250px] rounded-lg shadow-md overflow-hidden bg-white/10 backdrop-blur-xl">
+  <div className="w-[280px] md:w-[250px] rounded-lg shadow-md overflow-hidden bg-white/10 backdrop-blur-xl">
     <div className="p-6">
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       {price !== "free" && (
