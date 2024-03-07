@@ -27,6 +27,14 @@ const testimonialsData = [
     title: 'CEO of ABC Inc',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec turpis at nunc posuere tincidunt. Proin nec ex eget libero fermentum varius',
   },
+  {
+    id: 3,
+    name: 'Alex Mwamba',
+    image: '/images/user.jpg',
+    emoji: '/emojis/care.png',
+    title: 'CEO of ABC Inc',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec turpis at nunc posuere tincidunt. Proin nec ex eget libero fermentum varius',
+  },
 ]
 
 const Testimonials = () => {
@@ -35,7 +43,7 @@ const Testimonials = () => {
       <div>
         <h1 className='text-center font-bold text-2xl md:text-4xl bg-gradient-to-r from-slate-100 via-gray-400 to-slate-100 bg-clip-text text-transparent'>Our Happy Customers</h1>
       </div>
-      <div className='grid grid-cols-1 md:flex gap-4 '>
+  <div className='grid grid-cols-1 sm:flex gap-4 '>
         {testimonialsData.map((testimonial) => (
           <div className='relative w-[250px] mt-10 bg-white/10 backdrop-blur-xl py-4 px-4 rounded-xl' key={testimonial.id}>
             <div className='flex justify-center items-center px-2 py-1 rounded-full gap-2 bg-black absolute -top-4 right-[35%]'>
@@ -49,10 +57,10 @@ const Testimonials = () => {
               <FaStar className='text-yellow-400 text-[10px]' />
               <FaStar className='text-yellow-400 text-[10px]' />
             </div>
-            <p className='text-[10px]'>{testimonial.desc}</p>
+            <p className='text-[10px] leading-relaxed'>{testimonial.desc}</p>
             <div className='mt-4'>
               <h4 className='text-[13px] font-bold'>{testimonial.name}</h4>
-              <p className='text-[8px]'>{testimonial.title}</p>
+              <p className='text-[9px] mt-1'>{testimonial.title}</p>
             </div>
           </div>
          ))}
