@@ -95,7 +95,7 @@ const Navbar = () => {
             <span className="block uppercase">register now </span>
             <GoArrowUpRight className="text-2xl ml-1" />
           </Link>
-      <p className="fixed bottom-2 text-center text-yellow-500 uppercase font-bold">To Get Better, You Have To Start!!</p>
+          <p className="fixed bottom-2 text-center text-yellow-500 uppercase font-bold">To Get Better, You Have To Start!!</p>
         </div>
       )}
     </nav>

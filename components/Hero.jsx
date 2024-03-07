@@ -68,7 +68,9 @@ const Hero = () => {
           <p className="text-sm max-w-[600px]">
           Elevate your digital experience with decentralized power, enhanced security, and limitless possibilities. Embrace the evolution of the internet; your journey to a smarter, more connected world starts here.
           </p>
-          <button className="py-3 px-4 bg-white text-black rounded-full uppercase text-sm font-semibold mt-10">get started</button>
+          <button className="py-3 px-4 border border-white rounded-full mt-10 cursor-pointer hover:bg-white">
+          <p className="uppercase text-sm font-semibold bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent hover:text-black">Get Started</p>
+          </button>
         </div>
       </div>
       <div className="flex items-center py-4 transform -skew-y-3 border-t border-b border-gray-600 overflow-hidden">

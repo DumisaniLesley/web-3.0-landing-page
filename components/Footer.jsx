@@ -1,37 +1,48 @@
-import { FaFacebookF, FaInstagram, FaYoutube,FaPhoneAlt,FaHome } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaPhoneAlt,
+  FaHome,
+} from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
-
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='px-10 lg:max-w-[1200px] mx-auto'>
-      <div>
-        <h2 className="font-bold bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">WEB 3.0</h2>
-      </div>
-      <div className='grid grid-cols-1 md:flex justify-between items-center gap-6 py-10'>
+    <footer className="px-10 lg:max-w-[1200px] mx-auto">
+      <div className="grid grid-cols-1 md:flex justify-between items-center gap-6 py-10">
         <div>
-          <p className='max-w-[350px] text-sm'>Elevate your digital experience with decentralized power, enhanced security, and limitless possibilities. Embrace the evolution of the internet;</p>
-          <div className='flex gap-2 py-4'>
+          <div>
+            <h2 className="text-3xl font-extrabold bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent uppercase mb-2">
+              WEB 3.0
+            </h2>
+          </div>
+          <p className="max-w-[350px] text-sm">
+            Elevate your digital experience with decentralized power, enhanced
+            security, and limitless possibilities. Embrace the evolution of the
+            internet.
+          </p>
+          <div className="flex gap-2 py-4">
             <div>
-              <FaFacebookF className='text-2xl bg-blue-800 p-1 rounded-full'/>
+              <FaFacebookF className="text-2xl bg-blue-800 p-1 rounded-full" />
             </div>
             <div>
-              <FaXTwitter className='text-2xl bg-blue-500 p-1 rounded-full'/>
+              <FaXTwitter className="text-2xl bg-blue-500 p-1 rounded-full" />
             </div>
             <div>
-              <FaInstagram className='text-2xl bg-pink-600 p-1 rounded-full'/>
+              <FaInstagram className="text-2xl bg-pink-600 p-1 rounded-full" />
             </div>
             <div>
-              <FaYoutube className='text-2xl bg-red-600 p-1 rounded-full'/>
+              <FaYoutube className="text-2xl bg-red-600 p-1 rounded-full" />
             </div>
           </div>
         </div>
         <div>
-          <h2 className="font-bold">Useful Links</h2>
-          <ul className='text-sm py-2'>
+          <h2 className="font-bold text-lg bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">Useful Links</h2>
+          <ul className="text-sm py-3">
             <li className="my-1">Home</li>
             <li className="my-1">Services</li>
             <li className="my-1">Products</li>
@@ -39,9 +50,9 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h2 className="font-bold">Contact Us</h2>
-          <ul className="text-sm py-2">
-            <li  className="my-1 flex items-center gap-2">
+          <h2 className="font-bold text-lg bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">Contact Us</h2>
+          <ul className="text-sm py-3">
+            <li className="my-1 flex items-center gap-2">
               <FaPhoneAlt />
               <span>+260 978 123 456</span>
             </li>
@@ -56,12 +67,12 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <hr className=""/>
+      <hr className="" />
       <div className="text-center text-[10px] py-4">
-        <p>All Rights Reserved @Dumisani { currentYear} </p>
+        <p className="bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">All Rights Reserved @Dumisani {currentYear} </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
