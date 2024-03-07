@@ -52,7 +52,7 @@ const Hero = () => {
         <h1 className="text-center text-[40px] md:text-[65px] font-bold bg-gradient-to-r from-slate-100 via-gray-400 to-slate-100 bg-clip-text text-transparent">Web 3 Design</h1>
         <span className="text-center text-[40px] md:text-[65px] font-bold mt-2 md:-mt-5 bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">Agency.</span>
       </div>
-      <div className="px-20 grid grid-cols-1 md:flex justify-between">
+      <div className="px-10 md:px-20 grid grid-cols-1 md:flex justify-between">
         <div className="w-full h-full flex justify-center items-center">
           <Image src="/images/web3.png" alt="hero" width={340} height={500} />
         </div>
@@ -60,8 +60,8 @@ const Hero = () => {
           <div className="py-6 flex justify-between gap-6">
             {heroData.map((data) => (
               <div key={data.id} className="border border-gray-300 px-5 py-3 rounded-xl flex flex-col items-center justify-center">
-                <h3 className="font-semibold text-3xl">{data.title}</h3>
-                <span className="font-light uppercase text-[12px]">{data.desc}</span>
+                <h3 className="font-semibold text-xl md:text-3xl">{data.title}</h3>
+                <span className="font-light uppercase text-[10px] md:text-[12px]">{data.desc}</span>
               </div>
             ))} 
         </div>
