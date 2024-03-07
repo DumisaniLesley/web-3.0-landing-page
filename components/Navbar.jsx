@@ -91,10 +91,11 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Link href="/" className="flex items-center">
-            <span className="block uppercase text-white">register now </span>
+          <Link href="/" className="flex items-center text-white">
+            <span className="block uppercase">register now </span>
             <GoArrowUpRight className="text-2xl ml-1" />
           </Link>
+      <p className="fixed bottom-2 text-center text-yellow-500 uppercase font-bold">To Get Better, You Have To Start!!</p>
         </div>
       )}
     </nav>
