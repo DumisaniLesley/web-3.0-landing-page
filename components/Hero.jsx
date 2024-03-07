@@ -47,10 +47,10 @@ const heroData = [
 
 const Hero = () => {
   return (
-    <div className="py-6 lg:max-w-[1200px] mx-auto mt-10">
+    <div className="py-6 lg:max-w-[1200px] mx-auto mt-2 md:mt-10">
       <div className="px-10 flex flex-col justify-center items-center">
-        <h1 className="text-center text-[40px] md:text-[65px] font-bold bg-gradient-to-r from-slate-100 via-gray-400 to-slate-100 bg-clip-text text-transparent">Web 3 Design</h1>
-        <span className="text-center text-[40px] md:text-[65px] font-bold mt-2 md:-mt-5 bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">Agency.</span>
+        <h1 className="text-center text-[45px] md:text-[65px] font-bold bg-gradient-to-r from-slate-100 via-gray-400 to-slate-100 bg-clip-text text-transparent">Web 3 Design</h1>
+        <span className="text-center text-[45px] md:text-[65px] font-bold -mt-5 bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">Agency.</span>
       </div>
       <div className="px-10 md:px-20 grid grid-cols-1 md:flex justify-between">
         <div className="w-full h-full flex justify-center items-center">

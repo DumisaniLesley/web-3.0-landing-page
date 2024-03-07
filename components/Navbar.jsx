@@ -47,7 +47,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-4 px-6 md:px-10 flex justify-between items-center lg:max-w-[1200px] mx-auto text-gray-400">
+<nav className="py-4 px-6 md:px-10 flex justify-between items-center lg:max-w-[1200px] mx-auto text-gray-400 md:sticky md:top-0 bg-black z-20">
       <Link href="/">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">
           WEB 3.0
@@ -71,7 +71,7 @@ const Navbar = () => {
         <HiMenuAlt3 />
       </div>
       {isMobileNavOpen && (
-        <div className="md:hidden absolute top-0 right-0 h-full w-[95%] bg-transparent backdrop-blur-lg z-10 shadow-lg transition-all ease-in duration-600 transform translate-x-0 px-4 ">
+        <div className="md:hidden absolute top-0 right-0 h-full w-[95%] bg-transparent backdrop-blur-lg z-[100] shadow-lg transition-all ease-in duration-600 transform translate-x-0 px-4 ">
           <div className="mt-8 flex justify-between items-center">
             <h1 className="text-3xl font-bold bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent uppercase">
               Web 3.0
@@ -95,7 +95,7 @@ const Navbar = () => {
             <span className="block uppercase">register now </span>
             <GoArrowUpRight className="text-2xl ml-1" />
           </Link>
-          <p className="fixed bottom-2 text-center text-yellow-500 uppercase font-bold">To Get Better, You Have To Start!!</p>
+          <p className="fixed bottom-0 text-yellow-500 uppercase font-bold">To Get Better, You Have To Start!!</p>
         </div>
       )}
     </nav>
