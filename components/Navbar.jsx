@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <nav className='py-4 px-10 flex justify-between items-center lg:max-w-[1200px] mx-auto text-gray-400'>
       <Link href='/'>
-        <h1 className='text-3xl font-bold'>WEB 3.0</h1>
+        <h1 className='text-3xl font-bold bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent'>WEB 3.0</h1>
       </Link>
       <div className='hidden md:flex'>
         {Links.map((link) => (

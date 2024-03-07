@@ -1,4 +1,5 @@
-import { FaFacebookF, FaInstagram, FaYoutube  } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube,FaPhoneAlt,FaHome } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
   return (
     <footer className='px-10 lg:max-w-[1200px] mx-auto'>
       <div>
-        <h2>WEB 3.0</h2>
+        <h2 className="font-bold bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">WEB 3.0</h2>
       </div>
       <div className='grid grid-cols-1 md:flex justify-between items-center gap-6 py-10'>
         <div>
@@ -40,16 +41,16 @@ const Footer = () => {
         <div>
           <h2 className="font-bold">Contact Us</h2>
           <ul className="text-sm py-2">
-            <li  className="my-1">
-              <span>Phone:</span>
+            <li  className="my-1 flex items-center gap-2">
+              <FaPhoneAlt />
               <span>+260 978 123 456</span>
             </li>
-            <li className="my-1">
-              <span>Email:</span>
+            <li className="my-1 flex items-center gap-2">
+              <MdOutlineMail />
               <span>cryto@web.io</span>
             </li>
-            <li className="my-1">
-              <span>Address:</span>
+            <li className="my-1 flex items-center gap-2">
+              <FaHome />
               <span>Somewhere Wild</span>
             </li>
           </ul>
