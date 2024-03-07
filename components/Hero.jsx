@@ -49,14 +49,14 @@ const Hero = () => {
   return (
     <div className="py-6 lg:max-w-[1200px] mx-auto">
       <div className="px-10 flex flex-col justify-center items-center">
-        <h1 className="text-center text-[65px] font-bold">Web 3 Design</h1>
-        <span className="text-center text-[65px] font-bold -mt-5">Agency.</span>
+        <h1 className="text-center text-[30px] md:text-[65px] font-bold">Web 3 Design</h1>
+        <span className="text-center text-[30px] md:text-[65px] font-bold mt-2 md:-mt-5">Agency.</span>
       </div>
-      <div className="px-20 flex justify-between">
+      <div className="px-20 grid grid-cols-1 md:flex justify-between">
         <div className="w-full h-full flex justify-center items-center">
           <Image src="/images/web3.png" alt="hero" width={340} height={500} />
         </div>
-        <div className="flex flex-col items-start py-20">
+        <div className="flex flex-col items-start py-10 md:py-20">
           <div className="py-6 flex justify-between gap-6">
             {heroData.map((data) => (
               <div key={data.id} className="border border-gray-300 px-5 py-3 rounded-xl flex flex-col items-center justify-center">
@@ -71,7 +71,7 @@ const Hero = () => {
           <button className="py-3 px-4 bg-white text-black rounded-full uppercase text-sm font-semibold mt-10">get started</button>
         </div>
       </div>
-      <div className="flex items-center py-4 transform -skew-y-3 border-t border-b border-gray-600">
+      <div className="flex items-center py-4 transform -skew-y-3 border-t border-b border-gray-600 overflow-hidden">
         {bannerData.map((data) => (
           <div key={data.id} className="flex items-center">
             <PiStarFourFill className="text-red-400 text-2xl font-extralight"/>

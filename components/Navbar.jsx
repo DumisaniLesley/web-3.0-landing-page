@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { GoArrowUpRight } from "react-icons/go";
+import { HiMenuAlt3 } from "react-icons/hi";
 
 const Links = [
   {
@@ -38,7 +39,7 @@ const Navbar = () => {
       <Link href='/'>
         <h1 className='text-3xl font-bold'>WEB 3.0</h1>
       </Link>
-      <div>
+      <div className='hidden md:flex'>
         {Links.map((link) => (
           <Link 
             key={link.id} 
@@ -48,7 +49,10 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <Link href='/' className='flex'>
+      <div>
+          <HiMenuAlt3 className='text-3xl md:hidden' />
+      </div>
+      <Link href='/' className='hidden md:flex'>
         <span className='uppercase'>register now</span>
         <GoArrowUpRight className='text-2xl ml-1' />
       </Link>

@@ -35,7 +35,7 @@ const Testimonials = () => {
       <div>
         <h1 className='text-center'>Our Happy Customers</h1>
       </div>
-      <div className='flex gap-4 '>
+      <div className='grid grid-cols-1 md:flex gap-4 '>
         {testimonialsData.map((testimonial) => (
           <div className='relative w-[250px] mt-10 bg-white/10 backdrop-blur-xl py-4 px-4 rounded-xl' key={testimonial.id}>
             <div className='flex justify-center items-center px-2 py-1 rounded-full gap-2 bg-black absolute -top-4 right-[35%]'>

@@ -22,7 +22,7 @@ const Services = () => {
     <section id='#services' className='py-8 mt-6 lg:max-w-[1200px] mx-auto'>
       <div className='px-10'>
         <h1 className='text-center font-bold text-4xl'>Our Services</h1>
-        <div className='grid grid-cols-2 items-center px-10 mt-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center px-10 mt-10'>
           <div>
             <h2 className='font-semibold text-2xl my-3'>UI/UX Design</h2>
             <p className='max-w-[400px] text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus iusto necessitatibus ratione expedita corporis voluptatibus.</p>

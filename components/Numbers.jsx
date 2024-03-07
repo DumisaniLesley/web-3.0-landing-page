@@ -25,11 +25,11 @@ desc: 'Earnings'
 
 const Numbers = () => {
   return (
-    <section id='#testimonial' className='py-8 backdrop-blur-xl bg-white/10'>
+    <section id='#testimonial' className='py-8 backdrop-blur-xl bg-white/10 lg:max-w-[1200px] mx-auto'>
       <div className='px-16 py-4 flex justify-between'>
         {numbersData.map((number) => (
           <div key={number.id} className='flex flex-col justify-center items-center gap-4'>
-            <h1 className='text-4xl font-bold'>{number.title}</h1>
+            <h1 className='text-xl md:text-4xl font-bold'>{number.title}</h1>
             <span className='text-white -mt-4'>{number.desc}</span>
           </div>
         ))}
