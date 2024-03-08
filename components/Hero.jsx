@@ -73,7 +73,8 @@ const Hero = () => {
           </button>
         </div>
       </div>
-  <div className="flex items-center py-4 transform -skew-y-3 border-t border-b border-gray-600 overflow-scroll no-scrollbar">
+      <div className=" transform -skew-y-3 border-t border-b border-gray-600 overflow-scroll no-scrollbar">
+      <div className=" flex items-center py-4 animate-loop-scroll">
         {bannerData.map((data) => (
           <div key={data.id} className="flex items-center">
             <PiStarFourFill className="text-red-400 text-2xl font-extralight"/>
@@ -82,6 +83,7 @@ const Hero = () => {
               </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );
