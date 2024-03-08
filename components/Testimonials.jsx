@@ -39,7 +39,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <div className="py-8 px-10 mt-6 lg:max-w-[1200px] mx-auto">
+    <div className="py-8 px-4 md:px-10 mt-6 lg:max-w-[1200px] mx-auto">
       <div>
         <h1 className="text-center font-bold text-2xl md:text-4xl bg-gradient-to-r from-slate-100 via-gray-400 to-slate-100 bg-clip-text text-transparent">
           Our Happy Customers
