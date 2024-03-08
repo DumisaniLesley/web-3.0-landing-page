@@ -47,7 +47,7 @@ const heroData = [
 
 const Hero = () => {
   return (
-    <div className="py-6 lg:max-w-[1200px] mx-auto mt-2 md:mt-10">
+    <div className="py-6 sm:py-2 lg:max-w-[1200px] mx-auto">
       <div className="px-10 flex flex-col justify-center items-center">
         <h1 className="text-center text-[45px] md:text-[65px] font-bold bg-gradient-to-r from-slate-100 via-gray-400 to-slate-100 bg-clip-text text-transparent">Web 3 Design</h1>
         <span className="text-center text-[45px] md:text-[65px] font-bold -mt-5 bg-gradient-to-r from-red-600 to-yellow-400 bg-clip-text text-transparent">Agency.</span>
@@ -73,11 +73,13 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center py-4 transform -skew-y-3 border-t border-b border-gray-600 overflow-hidden">
+  <div className="flex items-center py-4 transform -skew-y-3 border-t border-b border-gray-600 overflow-scroll no-scrollbar">
         {bannerData.map((data) => (
           <div key={data.id} className="flex items-center">
             <PiStarFourFill className="text-red-400 text-2xl font-extralight"/>
-              <h3 className="mx-7">{data.title}</h3>
+              <div className="w-full flex justify-center items-center">
+                <h3 className="mx-7 uppercase text-nowrap font-bold">{data.title}</h3>
+              </div>
           </div>
         ))}
       </div>
