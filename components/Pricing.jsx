@@ -85,7 +85,7 @@ const Pricing = () => {
   return (
     <section id="#pricing" className="px-10 lg:max-w-[1200px] mx-auto">
       <h1 className='text-center font-bold text-2xl md:text-4xl bg-gradient-to-r from-slate-100 via-gray-400 to-slate-100 bg-clip-text text-transparent'>Pricing</h1>
-  <p className="text-center text-sm lg:-mt-4 mt-0">Start with a 30-day free trial. No credit card required.</p>
+  <p className="text-center text-sm mt-0 lg:mt-2">Start with a 30-day free trial. No credit card required.</p>
       <div className="grid grid-cols-1 justify-center items-center md:items-start md:flex gap-10 md:gap-6 my-10 bg-black ">
         {pricingData.map((plan) => (
           <PricingCard key={plan.title} {...plan} />
